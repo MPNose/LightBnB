@@ -175,7 +175,7 @@ const addProperty = (property) => {
         property.post_code, property.country, property.parking_spaces, property.number_of_bathrooms, 
         property.number_of_bedrooms])
     .then((result) => {
-      return result.rows;
+      return result.rows[0];
     })    
     .catch((err) => {
       console.log(err.message);
